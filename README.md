@@ -1,5 +1,7 @@
 # prom-dynamodb-storage
-External storage gateway for prometheus
+External storage gateway for prometheus - NOT READY FOR PROD
+
+[![Build Status](https://travis-ci.org/Labbs/prom-dynamodb-storage.svg?branch=master)](https://travis-ci.org/Labbs/prom-dynamodb-storage) [![Go Report Card](https://goreportcard.com/badge/github.com/Labbs/prom-dynamodb-storage)](https://goreportcard.com/report/github.com/Labbs/prom-dynamodb-storage)
 
 ## Options
 ```
@@ -11,3 +13,8 @@ External storage gateway for prometheus
 
 ## Information
 AWS session use the current credentials if set.
+
+## Features
+* Bulk write to dynamodb
+* Read path
+* Metrics path
