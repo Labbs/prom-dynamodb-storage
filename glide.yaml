@@ -1,0 +1,23 @@
+package: prom-dynamodb-storage
+import:
+- package: github.com/aws/aws-sdk-go
+  version: ^1.13.23
+  subpackages:
+  - aws
+  - aws/session
+- package: github.com/gogo/protobuf
+  version: ^1.0.0
+  subpackages:
+  - proto
+- package: github.com/golang/snappy
+- package: github.com/guregu/dynamo
+- package: github.com/prometheus/common
+  subpackages:
+  - model
+- package: github.com/prometheus/prometheus
+  subpackages:
+  - prompb
+- package: github.com/urfave/cli
+  version: ^1.20.0
+- package: github.com/rs/zerolog
+  version: ^1.6.0
