@@ -10,6 +10,7 @@ import (
 	"github.com/prometheus/common/model"
 )
 
+// Client - struct with session and table
 type Client struct {
 	session *dynamo.DB
 	table   dynamo.Table
@@ -20,9 +21,10 @@ type metric struct {
 	Time   time.Time
 
 	Tags  map[string]string `dynamo:"Tags"`
-	Value string            `dynamo:"Value`
+	Value string            `dynamo:"Value"`
 }
 
+// NewClient - init connection to aws
 func NewClient(table string, region string) *Client {
 	s := dynamo.New(session.New(), &aws.Config{Region: aws.String(region)})
 	return &Client{

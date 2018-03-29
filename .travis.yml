@@ -11,4 +11,5 @@ go:
 sudo: false
 
 script:
+  - go get github.com/Masterminds/glide
   - make
