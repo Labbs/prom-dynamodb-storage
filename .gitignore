@@ -19,3 +19,6 @@ config
 
 vendor/
 prom-dynamodb-storage
+
+# cache folder
+.gopath~
